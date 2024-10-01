@@ -30,7 +30,6 @@ html, body {
 }
 
 .tool {
-  margin: 0;
   height: 30px;
   width: 100%;
   background-color: rgb(0, 0, 0);
@@ -39,12 +38,16 @@ html, body {
   padding: 5px;
   font-size: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content:end;
+  gap: 5px;
 
 }
 
 .tool button{
   gap: 3px;
+  margin-right: 10px;
+
+
   /* border:solid white 1px; */
 
 }
@@ -65,6 +68,19 @@ html, body {
 .save {
   color: rgb(151, 222, 151);
   background-color: transparent;
+}
+.print{
+  background-color: transparent;
+  color: yellow;
+}
+.title{
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  justify-content: start;
+
 }
 
 .notes textarea {
