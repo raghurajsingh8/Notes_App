@@ -122,6 +122,10 @@
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
+     text-align:center;
+     justify-content:center;
+     align-items:center;
+     
   padding: 15px 25px;
   border-radius: 50%;
   border: none;
