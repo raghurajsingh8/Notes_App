@@ -33,10 +33,10 @@ const Addnote = (text = "", date = "") => {
  note.innerHTML = `
  <div class="tool">
   <button class="delete" title="Delete">
-   <i class="fas fa-trash trash-icon"></i>DELETE
+   <i class="fas fa-trash trash-icon"></i>
   </button>
   <button class="save" title="Save">
-   <i class="fas fa-save save-icon"></i>SAVE
+   <i class="fas fa-save save-icon"></i>
   </button>
  </div>
  <textarea>${text}</textarea>

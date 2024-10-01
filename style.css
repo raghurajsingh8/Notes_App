@@ -22,8 +22,8 @@ html, body {
 
 .notes {
   background-color: violet;
-  height: 800px;
-  width: 400px;
+  height: 40vh;
+  width: 48vw;
   margin: 15px;
   display: flex;
   flex-direction: column;
@@ -31,21 +31,21 @@ html, body {
 
 .tool {
   margin: 0;
-  height: 50px;
+  height: 30px;
   width: 100%;
-  background-color: rgb(36, 5, 106);
+  background-color: rgb(0, 0, 0);
   border: solid white 1px;
   color: white;
   padding: 5px;
   font-size: 15px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 
 .tool button{
   gap: 3px;
-  border:solid white 1px;
+  /* border:solid white 1px; */
 
 }
 
@@ -57,11 +57,14 @@ html, body {
 }
 
 .delete {
-  background-color: red;
+  color: rgb(234, 80, 80);
+  border: none;
+  background-color:transparent;
 }
 
 .save {
-  background-color: green;
+  color: rgb(151, 222, 151);
+  background-color: transparent;
 }
 
 .notes textarea {
@@ -76,10 +79,16 @@ html, body {
   font-family: 'Times New Roman', Times, serif;
   resize: none;
 }
+.notes:focus{
+  height: 80vh;
+  width: 80vw;
+  transition:2s;
+}
 
 .notes textarea:focus {
   background-color: rgb(103, 3, 3);
   color: white;
+  
 }
 
 #add {
@@ -95,19 +104,45 @@ html, body {
   right: 10px;
   top: 10px;
 }
+/* Base styles for desktop */
 .notes {
-   background-color: violet;
-   overflow: hidden;
-   height: 500px;
-   width: 400px;
-   margin: 15px;
-   display: flex;
-   border: solid white 3px;
-   border-radius: 50px;
-   flex-direction: column; /* Ensure that the date appears below the textarea */
-   align-items: center; /* Center the content horizontally */
-   justify-content: space-between; /* Ensure spacing between elements */
+  background-color: violet;
+  overflow: hidden;
+  height: 40vh;
+  width: 40vw;
+  margin: 15px;
+  display: flex;
+  border: solid white 3px;
+  border-radius: 5px 15px 20px 0px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   }
+  
+  /* For tablets and smaller laptops (between 768px and 1024px) */
+  @media (max-width: 1024px) {
+.notes {
+ width: 60vw;
+height: 50vh;
+}
+  }
+  
+  /* For mobile devices (below 768px) */
+  @media (max-width: 768px) {
+ .notes {
+ width: 80vw;
+height: 60vh;
+  }
+  }
+  
+  /* For small mobile devices (below 480px) */
+  @media (max-width: 480px) {
+  .notes {
+  width: 90vw;
+  height: 70vh;
+}
+  } 
+  
   
   .date {
   color: white; /* Set text color to white */
@@ -125,4 +160,15 @@ html, body {
   }
   h1{
     color: white;
+  }
+  h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+  
+  
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 1.6rem;
+    }
   }
